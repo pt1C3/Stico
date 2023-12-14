@@ -3,16 +3,12 @@
     padding: 0;
     margin: 0;
     font-family: Extra Light;
-    color: white;
+    color: #131A22;
     letter-spacing: 0.3px;
 }
 body{
     background-color: #FFFFFF;
     overflow-x: hidden;
-}
-.bold-text {
-    color: #0C5195;
-    font-family: Semi Bold;
 }
 
 a {
@@ -28,28 +24,10 @@ a:hover {
 }
 
 p {
-    color: #131A22;
     font-size: 15pt;
     text-align: justify;
 }
 
-@font-face {
-    font-family: Extra Light;
-    src: url(Metropolis-ExtraLight.otf);
-}
-
-@font-face {
-    font-family: Semi Bold;
-    src: url(Metropolis-SemiBold.otf);
-}
-@font-face {
-    font-family: Bold;
-    src: url(Metropolis-Bold.otf);
-}
-@font-face {
-    font-family: Regular;
-    src: url(Metropolis-Regular.otf);
-}
 
 #navbar {
     background-color: #131A22;
@@ -103,13 +81,11 @@ p {
 
 }
 .hero-text{
-    font-family: Regular;
     font-size: 2.5vw;
     color:#131A22;
 
 }
 #hero-bold{
-    font-family: Bold;
     color: #0C5195;
     font-size: 3.5vw;
 }
@@ -135,11 +111,13 @@ p {
     z-index: -1;
 }
 .content-wrapper {
+    min-height: 100vh;
     padding: 3rem 0;
-    display: grid;
-    gap: 2rem;
     padding: 0 18%;
     background-color: #FFFFFF;
+}
+.content-wrapper > *{
+    margin:1rem 0;
 }
 
 header {
@@ -148,7 +126,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     display: inline-block;
 }
 

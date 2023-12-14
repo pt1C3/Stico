@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Extra Light;
+    src: url(./fonts/Metropolis-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: Semi Bold;
+    src: url(./fonts/Metropolis-SemiBold.otf);
+}
+@font-face {
+    font-family: Bold;
+    src: url(./fonts/Metropolis-Bold.otf);
+}
+@font-face {
+    font-family: Regular;
+    src: url(./fonts/Metropolis-Regular.otf);
+}
+.txt-bold{
+    font-family: Bold;
+}
+.txt-semibold{
+    font-family: Semi Bold;
+}
+.txt-regular{
+    font-family: Regular;
+}
+.txt-extralight{
+    font-family: Extra Light;
+}
