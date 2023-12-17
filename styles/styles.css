@@ -4,7 +4,7 @@
     margin: 0;
     font-family: Extra Light;
     color: #131A22;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.01vw;
 }
 body{
     overflow-x: hidden;
@@ -16,17 +16,14 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-decoration-color: #0066CB;
-    text-decoration-skip: none;
+    text-decoration: none;
 }
 
 #navbar {
     background-color: #131A22;
     width: 100%;
     padding: 1.5rem 1.5rem;
-    font-size: 1.3vw;
+    font-size: calc(0.4rem + 0.8vw);
     height: fit-content;
     position: fixed;
     top: 0;
@@ -50,10 +47,10 @@ a:hover {
 }
 
 #hero-container {
-    height:100vh;
+    height: calc(10rem + 39vw);
     position: relative;
     display: grid;
-    grid-template-rows: 85% 15%;
+    grid-template-rows: 80% 20%;
 }
 
 #hero {
@@ -82,10 +79,10 @@ a:hover {
 }
 
 #hero button {
-    font-size: 18pt;
+    font-size: 1.8vw;
     color: white;
     border: none;
-    padding: 1rem 1.5rem;
+    padding: 1vw 1.5vw;
     border-radius: 0.5rem;
 }
 
