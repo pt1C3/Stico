@@ -3,6 +3,7 @@ body{
     --color-azul2: #0C5195;
     --color-black: #131A22;
     --color-azul-medio: #0B3C6D;
+    --color-azul-claro: #80B3E5
 }
 .txt-color-azul{
     color: #0066CB;
