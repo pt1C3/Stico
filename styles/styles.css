@@ -192,7 +192,12 @@ h2 {
     padding: 0 18vw;
     background-color: #FFFFFF;
 }
-
+@media (max-width:800px)
+{   
+    .content-wrapper {
+    padding: 2rem 5vw;
+    }
+}
 .content-wrapper>*:not(:first-child) {
     margin: 1rem 0;
 }
