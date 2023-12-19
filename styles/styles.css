@@ -9,6 +9,9 @@
     z-index: 4;
 }
 
+main{
+    margin-top: 4rem;
+}
 body {
     overflow-x: hidden;
 }
@@ -54,7 +57,6 @@ h2 {
 }
 
 #hero-container {
-    margin-top: 4rem;
     position: relative;
     display: grid;
     grid-template-rows: 75% 25%;
@@ -187,7 +189,6 @@ h2 {
 }
 
 .content-wrapper {
-    min-height: 100vh;
     padding: 3rem 0;
     padding: 0 18vw;
     background-color: #FFFFFF;
