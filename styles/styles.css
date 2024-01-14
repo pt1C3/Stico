@@ -4,7 +4,7 @@
     margin: 0;
     font-family: Extra Light;
     color: #131A22;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.02rem;
     text-decoration: none;
     z-index: 4;
     list-style-type: none;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 #navbar {
@@ -141,7 +141,7 @@ h2 {
 }
 
 #hero-illustration:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: 0.3s;
 
 }
@@ -191,12 +191,13 @@ h2 {
     padding: 2rem 18vw;
     background-color: #FFFFFF;
 }
-@media (max-width:800px)
-{   
+
+@media (max-width:800px) {
     .content-wrapper {
-    padding: 2rem 5vw;
+        padding: 2rem 5vw;
     }
 }
+
 .content-wrapper>section>*:not(:first-child) {
     margin: 1rem 0;
 }
@@ -215,28 +216,58 @@ h2 {
 .content-wrapper>section>header>h2 {
     display: inline-block;
 }
-#activity-items{
+
+#activity-items {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#activity-items-container{
+
+#activity-items-container {
     height: 60vh;
 }
-.activity-item{
+
+.activity-item {
     display: grid;
-    grid-template-columns: max(15%,3rem) 1fr;
+    grid-template-columns: max(15%, 3rem) 1fr;
 }
-.activity-item-material{
+
+.activity-item-material {
     grid-column-start: 2;
-    margin:auto 0;
+    margin: auto 0;
     text-align: left;
+    font-size: 1.3rem;
 }
-.activity-item-material-single{
+
+.activity-item-material-single {
     grid-row-end: span 2;
 }
-.activity-item-number{
+
+.activity-item-number {
     font-size: 4rem;
     grid-row-end: span 2;
+}
+.during-activity-item-container{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    padding: 1.5rem;
+    background-color: var(--color-branco-azul);
+    border-radius: 0.3rem;
+}
+
+.during-activity-item-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.during-activity-item-right>button {
+    background-color: var(--color-azul);
+    font-family: Semi Bold;
+    font-size: 1.2rem;
+    color: white;
+    padding:0.8rem 0;
+    border:none;
+    border-radius: 0.3rem;
+    display: inline-block;
 }
