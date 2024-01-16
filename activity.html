@@ -22,11 +22,11 @@
         </div>
     </nav>
     <main class="content-wrapper">
-        <header>
+        <header style="margin-top:2rem;">
             <h2>Prepare e misture as soluções</h2>
             <img src="img/info.svg">
         </header>
-        <section style="display: grid;grid-template-columns: 1fr 1fr;">
+        <section style="display: grid;grid-template-columns: 1fr 1fr;margin-top:2rem;">
             <div id="activity-items-container">
                 <ul id="activity-items">
                     <li class="activity-item">
@@ -59,47 +59,52 @@
             </div>
             <img src="img/gobele.svg" style="width: 60%;">
         </section>
-        <section>
+        <section style="margin-top:6rem;">
             <h2>Insira com luvas a amostra de plástico nos recipientes e mexa</h2>
-            <ul style="list-style-type: none;">
-                <li class="during-activity-item-container">
+            <ul style="list-style-type: none;display:grid;grid-row-gap:1rem;">
+                <li class="during-activity-item-container during-activity-item-container-selected">
+                    <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
+                    <div>
+                        <p class="txt-semibold txt-color-azul2 txt-size-normal">
+                            Água Destilada e Cloreto de Sódio</p>
+                        <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                    </div>
+                    <div class="during-activity-item-right">
+                        <button class="during-activity-item-button">Afunda</button>
+                        <button class="during-activity-item-button-disabled">Flutua</button>
+                    </div>
+                </li>
+                <li id="during-activity-divider"><hr class="during-activity-divider"/></li>
+                <li class="during-activity-item-container during-activity-item-container-locked">
+                    <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
                     <div>
                         <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
                         <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
                     </div>
-                    <div class="during-activity-item-right">
-                        <button>Afunda</button>
-                        <button>Flutua</button>
+                    <div class="during-activity-item-right-lock">
+                        <img class="lock" src="./img/lock.svg">
                     </div>
                 </li>
                 <li class="during-activity-item-container">
+                    <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
+
                     <div>
                         <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
                         <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
                     </div>
-                    <div class="during-activity-item-right">
-                        <button>Afunda</button>
-                        <button>Flutua</button>
+                    <div class="during-activity-item-right-lock">
+                        <img class="lock" src="./img/lock.svg">
                     </div>
                 </li>
                 <li class="during-activity-item-container">
+                    <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
+
                     <div>
                         <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
                         <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
                     </div>
-                    <div class="during-activity-item-right">
-                        <button>Afunda</button>
-                        <button>Flutua</button>
-                    </div>
-                </li>
-                <li class="during-activity-item-container">
-                    <div>
-                        <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
-                        <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
-                    </div>
-                    <div class="during-activity-item-right">
-                        <button>Afunda</button>
-                        <button>Flutua</button>
+                    <div class="during-activity-item-right-lock">
+                        <img class="lock" src="./img/lock.svg">
                     </div>
                 </li>
             </ul>

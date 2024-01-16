@@ -245,14 +245,19 @@ h2 {
 }
 
 .activity-item-number {
-    font-size: 4rem;
+    font-size: 3rem;
     grid-row-end: span 2;
+    text-align: center;
+}
+.during-activity-item-container-selected{
+    background-color: var(--color-branco-azul);
 }
 .during-activity-item-container{
     display: grid;
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 5% 1fr 30%;
+    grid-column-gap:1rem;
     padding: 1.5rem;
-    background-color: var(--color-branco-azul);
+
     border-radius: 0.3rem;
 }
 
@@ -261,7 +266,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
 }
-.during-activity-item-right>button {
+.during-activity-item-button{
     background-color: var(--color-azul);
     font-family: Semi Bold;
     font-size: 1.2rem;
@@ -270,4 +275,35 @@ h2 {
     border:none;
     border-radius: 0.3rem;
     display: inline-block;
+    transition: 0.3s;
+    transform: scale(1);
+}
+
+.during-activity-item-button:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+    background-color: var(--color-azul-medio);
+}
+.during-activity-item-button-disabled{
+    background-color: var(--color-azul-medio);
+    cursor: not-allowed;
+    font-family: Semi Bold;
+    font-size: 1.2rem;
+    color: white;
+    padding:0.8rem 0;
+    border:none;
+    border-radius: 0.3rem;
+    display: inline-block;
+}
+.during-activity-item-right-lock{
+    display: flex;
+    justify-content: right;
+}
+.during-activity-item-right-lock>.lock{
+    width: 3rem;
+
+}
+.during-activity-divider{
+    border-top: solid #B2CCE5 0.2rem;
+    border-radius: 1rem;
 }
