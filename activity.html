@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/colors.css">
     <link rel="stylesheet" href="styles/font.css">
+    <script src="./script/activity.js" defer></script>
     <title>Identificar o Plástico - Stico</title>
 </head>
 
@@ -62,49 +63,128 @@
         <section style="margin-top:6rem;">
             <h2>Insira com luvas a amostra de plástico nos recipientes e mexa</h2>
             <ul style="list-style-type: none;display:grid;grid-row-gap:1rem;">
-                <li class="during-activity-item-container during-activity-item-container-selected">
-                    <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
-                    <div>
-                        <p class="txt-semibold txt-color-azul2 txt-size-normal">
-                            Água Destilada e Cloreto de Sódio</p>
-                        <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                <li id="activity-item1">
+                    <div class="during-activity-item-header">
+                        <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
+                        <div>
+                            <p class="txt-semibold txt-color-azul2 txt-size-normal">
+                                Água Destilada e Cloreto de Sódio</p>
+                            <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                        </div>
+                        <div class="during-activity-item-right" style="display:grid;">
+                            <button onclick="afunda(1)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(1)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
                     </div>
-                    <div class="during-activity-item-right">
-                        <button class="during-activity-item-button">Afunda</button>
-                        <button class="during-activity-item-button-disabled">Flutua</button>
+                    <div class="during-activity-item-content">
+                        <h2 class="txt-color-black txt-semibold">O que se pode obter</h2>
+                        <p>yy-yy</p>
+                        <p class="txt-color-black txt-size-normal">O Policloreto de vinilo (PVC) é um tipo de plástico
+                            com elevado impacto ambiental e na saúde humana (liberta toxinas perigosas ao longo de todo
+                            o seu ciclo de vida), está a ser cada vez menos utilizado e tem vindo a ser substituído pelo
+                            PET. No entanto, por ser resistente, rígido e barato de produzir, ainda é usado em
+                            embalagens de detergentes e produtos de higiene ou nos blisters (invólucros de medicamentos)
+                            da indústria farmacêutica.</p>
                     </div>
                 </li>
-                <li id="during-activity-divider"><hr class="during-activity-divider"/></li>
-                <li class="during-activity-item-container during-activity-item-container-locked">
-                    <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
-                    <div>
-                        <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
-                        <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                <li id="during-activity-divider1">
+                    <hr class="during-activity-divider" />
+                </li>
+                <li id="activity-item2">
+                    <div class="during-activity-item-header">
+                        <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
+                        <div>
+                            <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio
+                            </p>
+                            <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                        </div>
+                        <div class="during-activity-item-right-lock">
+                            <img class="lock" src="./img/lock.svg">
+                        </div>
+                        <div class="during-activity-item-right">
+                            <button onclick="afunda(2)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(2)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
                     </div>
-                    <div class="during-activity-item-right-lock">
-                        <img class="lock" src="./img/lock.svg">
+                    <div class="during-activity-item-content">
+                        <h2 class="txt-color-black txt-semibold">O que se pode obter</h2>
+                        <p>yy-yy</p>
+                        <p class="txt-color-black txt-size-normal">O Policloreto de vinilo (PVC) é um tipo de
+                            plástico com elevado impacto ambiental e na saúde humana (liberta toxinas perigosas ao
+                            longo de todo o seu ciclo de vida), está a ser cada vez menos utilizado e tem vindo a
+                            ser substituído pelo PET. No entanto, por ser resistente, rígido e barato de produzir,
+                            ainda é usado em embalagens de detergentes e produtos de higiene ou nos blisters
+                            (invólucros de medicamentos) da indústria farmacêutica.</p>
                     </div>
                 </li>
-                <li class="during-activity-item-container">
-                    <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
+                <li id="during-activity-divider2">
+                    <hr class="during-activity-divider" />
+                </li>
+                <li id="activity-item3">
+                    <div class="during-activity-item-header">
+                        <p class="txt-semibold txt-color-azul2 activity-item-number">3</p>
 
-                    <div>
-                        <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
-                        <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                        <div>
+                            <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio
+                            </p>
+                            <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                        </div>
+                        <div class="during-activity-item-right-lock">
+                            <img class="lock" src="./img/lock.svg">
+                        </div>
+                        <div class="during-activity-item-right">
+                            <button onclick="afunda(3)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(3)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
                     </div>
-                    <div class="during-activity-item-right-lock">
-                        <img class="lock" src="./img/lock.svg">
+                    <div class="during-activity-item-content">
+                        <h2 class="txt-color-black txt-semibold">O que se pode obter</h2>
+                        <p>yy-yy</p>
+                        <p class="txt-color-black txt-size-normal">O Policloreto de vinilo (PVC) é um tipo de plástico
+                            com elevado impacto ambiental e na saúde humana (liberta toxinas perigosas ao longo de todo
+                            o seu ciclo de vida), está a ser cada vez menos utilizado e tem vindo a ser substituído pelo
+                            PET. No entanto, por ser resistente, rígido e barato de produzir, ainda é usado em
+                            embalagens de detergentes e produtos de higiene ou nos blisters (invólucros de medicamentos)
+                            da indústria farmacêutica.</p>
                     </div>
                 </li>
-                <li class="during-activity-item-container">
-                    <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
+                <li id="during-activity-divider3">
+                    <hr class="during-activity-divider" />
+                </li>
+                <li id="activity-item4">
+                    <div class="during-activity-item-header">
+                        <p class="txt-semibold txt-color-azul2 activity-item-number">4</p>
 
-                    <div>
-                        <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio</p>
-                        <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                        <div>
+                            <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio
+                            </p>
+                            <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                        </div>
+                        <div class="during-activity-item-right-lock">
+                            <img class="lock" src="./img/lock.svg">
+                        </div>
+                        <div class="during-activity-item-right">
+                            <button onclick="afunda(4)"
+                                class="during-activity-item-button afunda-button">Afunda</button>
+                            <button onclick="flutua(4)"
+                                class="during-activity-item-button flutua-button">Flutua</button>
+                        </div>
                     </div>
-                    <div class="during-activity-item-right-lock">
-                        <img class="lock" src="./img/lock.svg">
+                    <div class="during-activity-item-content">
+                        <h2 class="txt-color-black txt-semibold">O que se pode obter</h2>
+                        <p>yy-yy</p>
+                        <p class="txt-color-black txt-size-normal">O Policloreto de vinilo (PVC) é um tipo de plástico
+                            com elevado impacto ambiental e na saúde humana (liberta toxinas perigosas ao longo de todo
+                            o seu ciclo de vida), está a ser cada vez menos utilizado e tem vindo a ser substituído pelo
+                            PET. No entanto, por ser resistente, rígido e barato de produzir, ainda é usado em
+                            embalagens de detergentes e produtos de higiene ou nos blisters (invólucros de medicamentos)
+                            da indústria farmacêutica.</p>
                     </div>
                 </li>
             </ul>

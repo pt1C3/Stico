@@ -252,17 +252,16 @@ h2 {
 .during-activity-item-container-selected{
     background-color: var(--color-branco-azul);
 }
-.during-activity-item-container{
+.during-activity-item-header{
     display: grid;
     grid-template-columns: 5% 1fr 30%;
     grid-column-gap:1rem;
     padding: 1.5rem;
 
-    border-radius: 0.3rem;
 }
 
 .during-activity-item-right{
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
 }
@@ -295,6 +294,7 @@ h2 {
     border-radius: 0.3rem;
     display: inline-block;
 }
+
 .during-activity-item-right-lock{
     display: flex;
     justify-content: right;
@@ -303,7 +303,18 @@ h2 {
     width: 3rem;
 
 }
+#activity-item1,#activity-item2,#activity-item3,#activity-item4{
+    border-radius: 0.3rem;
+    
+}
+#during-activity-divider2,#during-activity-divider3{
+    display:none;
+}
 .during-activity-divider{
     border-top: solid #B2CCE5 0.2rem;
     border-radius: 1rem;
+}
+.during-activity-item-content{
+    padding: 1.5rem;
+    display: none;
 }
