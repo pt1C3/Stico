@@ -35,33 +35,47 @@
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
                             <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
-                                    class="txt-color-azul2">250mL</span></p>
+                                    class="txt-color-azul2" id="agua-1-value">250mL</span></p>
                             <p class="txt-color-azul2 txt-semibold activity-item-material">Cloreto de Sódio: <span
-                                    class="txt-color-azul2">89,5g</span></p>
+                                    class="txt-color-azul2" id="sal-1-value">89.5g</span></p>
                         </li>
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
                             <p
                                 class="txt-color-azul2 txt-semibold activity-item-material activity-item-material-single">
-                                Água Destilada: <span class="txt-color-azul2">250mL</span></p>
+                                Água Destilada: <span class="txt-color-azul2"  id="agua-2-value">250mL</span></p>
                         </li>
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">3</p>
                             <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
-                                    class="txt-color-azul2">250mL</span></p>
+                                    class="txt-color-azul2" id="agua-3-value">122.5mL</span></p>
                             <p class="txt-color-azul2 txt-semibold activity-item-material">Álcool Etílico: <span
-                                    class="txt-color-azul2">89,5g</span></p>
+                                    class="txt-color-azul2" id="alcool-1-value">127.5mL</span></p>
                         </li>
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">4</p>
                             <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
-                                    class="txt-color-azul2">250mL</span></p>
+                                    class="txt-color-azul2" id="agua-4-value">100mL</span></p>
                             <p class="txt-color-azul2 txt-semibold activity-item-material">Álcool Etílico: <span
-                                    class="txt-color-azul2">89,5g</span></p>
+                                    class="txt-color-azul2" id="alcool-2-value">150mL</span></p>
                         </li>
                     </ul>
                 </div>
-                <img src="img/gobele.svg" style="width: 60%;">
+                <div style="height: 100%;padding-top:4rem">
+                    <div style="display: flex;align-items: baseline;margin-bottom: 2rem;width: 100%;">
+                        <img src="img/sal.svg" style="width: 5rem; display: inline-block;margin-right: 1.2rem;">
+                        <img src="img/garrafaalcool.svg"
+                            style="width: 6rem;display: inline-block;margin-right: 1.2rem;">
+                        <img src="img/garrafaagua.svg" style="width: 5rem; display: inline-block;">
+                        <img src="img/gobele.svg" style="width: 15rem; display: inline-block;">
+                    </div>
+                    <div id="input-container">
+                        <p class="txt-size-normal">Capacidade dos recipientes: </p>
+                        <input type="number" id="mL-input" class="txt-size-normal" value="250">
+                            <p class="txt-size-normal">mL</p>
+                    </div>
+
+                </div>
             </div>
         </section>
         <section style="margin-top:6rem;min-height:80vh">
@@ -92,7 +106,8 @@
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Policloreto de
                                     Vinilo</h2>
                             </div>
-                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,38 a 1,45 g/cm³</h2>
+                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,38 a 1,45
+                                g/cm³</h2>
                         </div>
 
 
@@ -121,7 +136,8 @@
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Politereftalato de
                                     etileno</h2>
                             </div>
-                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,29 a 1,40 g/cm³</h2>
+                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,29 a 1,40
+                                g/cm³</h2>
                         </div>
 
 
@@ -175,7 +191,8 @@
                                 <img src="./img/6ps.png" style="width: 6rem; filter: brightness(15%);margin: auto;">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Poliestireno</h2>
                             </div>
-                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,05 g/cm³</h2>
+                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,05 g/cm³
+                            </h2>
                         </div>
 
 
@@ -230,7 +247,8 @@
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Polietileno de alta
                                     densidade</h2>
                             </div>
-                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.94 a 0.96 g/cm³</h2>
+                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.94 a 0.96
+                                g/cm³</h2>
                         </div>
 
 
@@ -282,7 +300,8 @@
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Polietileno de baixa
                                     densidade</h2>
                             </div>
-                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.92 a 0.94 g/cm³</h2>
+                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.92 a 0.94
+                                g/cm³</h2>
                         </div>
 
 
@@ -310,7 +329,8 @@
                                 <img src="./img/5pp.png" style="width: 6rem; filter: brightness(15%);margin: auto;">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Polipropileno</h2>
                             </div>
-                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.90 g/cm³</h2>
+                            <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.90 g/cm³
+                            </h2>
                         </div>
 
 

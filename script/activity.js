@@ -130,3 +130,12 @@ function changeDivider(i) {
     }
 
 }
+document.getElementById('mL-input').onchange = function() {
+    document.getElementById("agua-1-value").innerText = this.value + "mL";
+    document.getElementById("sal-1-value").innerText = (Math.round(((this.value * 89.5)/250) * 10) / 10) + "g";
+    document.getElementById("agua-2-value").innerText = this.value + "mL";
+    document.getElementById("agua-3-value").innerText = (Math.round(((this.value * 122.5)/250) * 10) / 10) + "mL";
+    document.getElementById("alcool-1-value").innerText = (Math.round(((this.value * 127.5)/250) * 10) / 10) + "mL";
+    document.getElementById("agua-4-value").innerText = (Math.round(((this.value * 100)/250) * 10) / 10) + "mL";
+    document.getElementById("alcool-2-value").innerText = (Math.round(((this.value * 150)/250) * 10) / 10) + "mL";
+  };
