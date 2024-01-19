@@ -28,7 +28,7 @@ var plasticTexts = [
 
     'O Poliestireno (PS) é um material flexível, leve, impermeável e com capacidade de isolamento térmico. Este material era usado para produzir artigos de uso único como talheres, pratos ou palhinhas descartáveis, que foram, entretanto, retirados do mercado. A esferovite é, na verdade, poliestireno expandido, que também é usado em materiais para isolamento de edifícios. Nos dias de hoje é usado para por exemplo, em copos de iogurtes e de gelados, cestos de supermercado, aparelhos de barbear descartáveis ou brinquedos.',
 
-    'Não temos nada do 7 hehehehehehhehehehehhehehehe'
+    'Os plásticos tipo 7 são frequentemente utilizados na fabricação de produtos de uso doméstico, como utensílios de cozinha, brinquedos, eletrodomésticos e embalagens. Alguns podem conter substâncias químicas perigosas, como o bisfenol A (BPA), que pode ser liberado no meio ambiente e ter efeitos nocivos na saúde humana e na vida selvagem.\nPor esse motivo, é importante evitar o uso de plásticos tipo 7 quando possível. Se você precisar usar esses plásticos, é importante reciclá-los corretamente para evitar que eles acabem nos aterros sanitários ou nos oceanos.'
 ];
 
 
