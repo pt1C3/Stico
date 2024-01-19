@@ -1,14 +1,16 @@
 function flutua(i) {
-    console.log(i);
     resetItems(i);
     changeDivider(i);
     changeToFlutua(i);
-    changeNextItem(i);
+    if(i!=4)
+    {
+        changeNextItem(i);
+    }
+
 
 }
 
 function afunda(i) {
-    console.log(i);
     resetItems(i);
     changeDivider(i - 1);
     changeToAfunda(i);
@@ -31,7 +33,11 @@ function resetItems(i) {
             document.getElementById("activity-item" + j).style.backgroundColor = "#ffffff";
             document.getElementById("activity-item" + j).querySelector(".during-activity-item-right").style.display = "none";
             document.getElementById("activity-item" + j).querySelector(".during-activity-item-right-lock").style.display = "flex";
-
+            if(j==4)
+            {
+                document.getElementById("item-content1").style.display = "none";
+                document.getElementById("item-content2").style.display = "none";
+            }
         }
 
 
@@ -40,7 +46,13 @@ function resetItems(i) {
 
 function changeToAfunda(i) {
     //Aparece o texto
-    document.getElementById("activity-item" + i).querySelector(".during-activity-item-content").style.display = "block";
+    if(i==4)
+    {
+        document.getElementById("item-content1").style.display = "block";
+    }
+    else{
+        document.getElementById("activity-item" + i).querySelector(".during-activity-item-content").style.display = "block";
+    }
 
     //Muda o estilo
     document.getElementById("activity-item" + i).style.backgroundColor = "#E5F1FF";
@@ -56,8 +68,17 @@ function changeToAfunda(i) {
 }
 
 function changeToFlutua(i) {
+
     //Desparece o texto
-    document.getElementById("activity-item" + i).querySelector(".during-activity-item-content").style.display = "none";
+    if(i==4)
+    {
+        document.getElementById("item-content2").style.display = "block";
+    }
+    else {
+        document.getElementById("activity-item" + i).querySelector(".during-activity-item-content").style.display = "none";
+    }
+
+    
 
     //Muda o estilo
     document.getElementById("activity-item" + i).style.backgroundColor = "#E5F1FF";
