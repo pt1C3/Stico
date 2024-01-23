@@ -91,6 +91,7 @@ function changeToFlutua(i) {
     //Reset ao botão do lado
     resetBotaoAfunda(i);
 }
+
 function resetBotaoFlutua(i) {
     //Redefine os estilos
     document.getElementById("activity-item" + i).querySelector(".flutua-button").classList.add("during-activity-item-button");
@@ -112,7 +113,7 @@ function resetBotaoAfunda(i) {
 
 function changeNextItem(i) {
     //Faz com que os botões do próximo item apareçam
-    document.getElementById("activity-item" + (i + 1)).querySelector(".during-activity-item-right").style.display = "grid";
+    document.getElementById("activity-item" + (i + 1)).querySelector(".during-activity-item-right").style.display = "flex";
     //E o cadeado desapareça
     document.getElementById("activity-item" + (i + 1)).querySelector(".during-activity-item-right-lock").style.display = "none";
 }

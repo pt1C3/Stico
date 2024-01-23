@@ -48,7 +48,7 @@ function changePlastic() {
     document.getElementById(this.id).classList.remove("plastic-type-unselected");
     console.log(nPlastico);
     console.log(document.getElementById("options-" + nPlastico));
-    document.getElementById("options-" + nPlastico).style.display = "grid";
+    document.getElementById("options-" + nPlastico).style.display = "flex";
 
     //não sei mas funciona para dar scroll e não ficar atrás da navbar :)
     var element = document.getElementById('plastic-types-container');

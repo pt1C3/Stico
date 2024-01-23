@@ -29,40 +29,48 @@
                 <h2>Prepare e misture as soluções</h2>
                 <img src="img/info.svg">
             </header>
-            <div style="display: grid;grid-template-columns: 1fr 1fr;margin-top:2rem;">
+            <div class="activity-first-container">
                 <div id="activity-items-container">
                     <ul id="activity-items">
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
-                            <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
-                                    class="txt-color-azul2" id="agua-1-value">250mL</span></p>
-                            <p class="txt-color-azul2 txt-semibold activity-item-material">Cloreto de Sódio: <span
-                                    class="txt-color-azul2" id="sal-1-value">89.5g</span></p>
+                            <div>
+                                <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
+                                        class="txt-color-azul2" id="agua-1-value">250mL</span></p>
+                                <p class="txt-color-azul2 txt-semibold activity-item-material">Cloreto de Sódio: <span
+                                        class="txt-color-azul2" id="sal-1-value">89.5g</span></p>
+                            </div>
                         </li>
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
-                            <p
-                                class="txt-color-azul2 txt-semibold activity-item-material activity-item-material-single">
-                                Água Destilada: <span class="txt-color-azul2"  id="agua-2-value">250mL</span></p>
+                            <div>
+                                <p
+                                    class="txt-color-azul2 txt-semibold activity-item-material activity-item-material-single">
+                                    Água Destilada: <span class="txt-color-azul2" id="agua-2-value">250mL</span></p>
+                            </div>
                         </li>
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">3</p>
-                            <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
-                                    class="txt-color-azul2" id="agua-3-value">122.5mL</span></p>
-                            <p class="txt-color-azul2 txt-semibold activity-item-material">Álcool Etílico: <span
-                                    class="txt-color-azul2" id="alcool-1-value">127.5mL</span></p>
+                            <div>
+                                <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
+                                        class="txt-color-azul2" id="agua-3-value">122.5mL</span></p>
+                                <p class="txt-color-azul2 txt-semibold activity-item-material">Álcool Etílico: <span
+                                        class="txt-color-azul2" id="alcool-1-value">127.5mL</span></p>
+                            </div>
                         </li>
                         <li class="activity-item">
                             <p class="txt-semibold txt-color-azul2 activity-item-number">4</p>
-                            <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
-                                    class="txt-color-azul2" id="agua-4-value">100mL</span></p>
-                            <p class="txt-color-azul2 txt-semibold activity-item-material">Álcool Etílico: <span
-                                    class="txt-color-azul2" id="alcool-2-value">150mL</span></p>
+                            <div>
+                                <p class="txt-color-azul2 txt-semibold activity-item-material">Água Destilada: <span
+                                        class="txt-color-azul2" id="agua-4-value">100mL</span></p>
+                                <p class="txt-color-azul2 txt-semibold activity-item-material">Álcool Etílico: <span
+                                        class="txt-color-azul2" id="alcool-2-value">150mL</span></p>
+                            </div>
                         </li>
                     </ul>
                 </div>
-                <div style="height: 100%;padding-top:4rem">
-                    <div style="display: flex;align-items: baseline;margin-bottom: 2rem;width: 100%;">
+                <div class="activity-first-right">
+                    <div class="activity-image-container">
                         <img src="img/sal.svg" style="width: 5rem; display: inline-block;margin-right: 1.2rem;">
                         <img src="img/garrafaalcool.svg"
                             style="width: 6rem;display: inline-block;margin-right: 1.2rem;">
@@ -72,7 +80,7 @@
                     <div id="input-container">
                         <p class="txt-size-normal">Capacidade dos recipientes: </p>
                         <input type="number" id="mL-input" class="txt-size-normal" value="250">
-                            <p class="txt-size-normal">mL</p>
+                        <p class="txt-size-normal">mL</p>
                     </div>
 
                 </div>
@@ -83,13 +91,15 @@
             <ul style="list-style-type: none;display:grid;grid-row-gap:1rem;">
                 <li id="activity-item1">
                     <div class="during-activity-item-header">
-                        <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
                         <div>
-                            <p class="txt-semibold txt-color-azul2 txt-size-normal">
-                                Água Destilada e Cloreto de Sódio</p>
-                            <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                            <p class="txt-semibold txt-color-azul2 activity-item-number">1</p>
+                            <div>
+                                <p class="txt-semibold txt-color-azul2 txt-size-normal">
+                                    Água Destilada e Cloreto de Sódio</p>
+                                <p class="txt-color-azul2 txt-size-normal">1,2 g/dm³</p>
+                            </div>
                         </div>
-                        <div class="during-activity-item-right" style="display:grid;">
+                        <div class="during-activity-item-right" style="display:flex;">
                             <button onclick="afunda(1)"
                                 class="during-activity-item-button afunda-button">Afunda</button>
                             <button onclick="flutua(1)"
@@ -112,7 +122,7 @@
 
 
                         <h2 class="txt-color-black txt-semibold txt-size-normal">O que se pode obter</h2>
-                        <div class="item-options-container-2">
+                        <div class="item-options-container">
                             <div class="item-option">
                                 <img class="item-option-img" src="./img/detergente.svg">
                                 <p class="txt-semibold txt-size-normal">Detergente</p>
@@ -142,7 +152,7 @@
 
 
                         <h2 class="txt-color-black txt-semibold txt-size-normal">O que se pode obter</h2>
-                        <div class="item-options-container-3">
+                        <div class="item-options-container">
                             <div class="item-option">
                                 <img class="item-option-img" src="./img/garrafa.svg">
                                 <p class="txt-semibold txt-size-normal">Garrafa</p>
@@ -168,10 +178,13 @@
                 </li>
                 <li id="activity-item2">
                     <div class="during-activity-item-header">
-                        <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
                         <div>
-                            <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada</p>
-                            <p class="txt-color-azul2 txt-size-normal">1 g/dm³</p>
+                            <p class="txt-semibold txt-color-azul2 activity-item-number">2</p>
+
+                            <div>
+                                <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada</p>
+                                <p class="txt-color-azul2 txt-size-normal">1 g/dm³</p>
+                            </div>
                         </div>
                         <div class="during-activity-item-right-lock">
                             <img class="lock" src="./img/lock.svg">
@@ -197,7 +210,7 @@
 
 
                         <h2 class="txt-color-black txt-semibold txt-size-normal">O que se pode obter</h2>
-                        <div class="item-options-container-2">
+                        <div class="item-options-container">
                             <div class="item-option">
                                 <img class="item-option-img" src="./img/iogurte.svg">
                                 <p class="txt-semibold txt-size-normal">Iogurtes</p>
@@ -221,6 +234,7 @@
                 </li>
                 <li id="activity-item3">
                     <div class="during-activity-item-header">
+                        <div>
                         <p class="txt-semibold txt-color-azul2 activity-item-number">3</p>
 
                         <div>
@@ -228,6 +242,7 @@
                             </p>
                             <p class="txt-color-azul2 txt-size-normal">0,93 g/dm³</p>
                         </div>
+                    </div>
                         <div class="during-activity-item-right-lock">
                             <img class="lock" src="./img/lock.svg">
                         </div>
@@ -253,7 +268,7 @@
 
 
                         <h2 class="txt-color-black txt-semibold txt-size-normal">O que se pode obter</h2>
-                        <div class="item-options-container-2">
+                        <div class="item-options-container">
                             <div class="item-option">
                                 <img class="item-option-img" src="./img/detergente.svg">
                                 <p class="txt-semibold txt-size-normal">Detergentes</p>
@@ -274,6 +289,7 @@
                 </li>
                 <li id="activity-item4">
                     <div class="during-activity-item-header">
+                        <div>
                         <p class="txt-semibold txt-color-azul2 activity-item-number">4</p>
 
                         <div>
@@ -281,6 +297,7 @@
                             </p>
                             <p class="txt-color-azul2 txt-size-normal">0,91 g/dm³</p>
                         </div>
+                    </div>
                         <div class="during-activity-item-right-lock">
                             <img class="lock" src="./img/lock.svg">
                         </div>
@@ -306,7 +323,7 @@
 
 
                         <h2 class="txt-color-black txt-semibold txt-size-normal">O que se pode obter</h2>
-                        <div class="item-options-container-2">
+                        <div class="item-options-container">
                             <div class="item-option">
                                 <img class="item-option-img" src="./img/sacos.svg">
                                 <p class="txt-semibold txt-size-normal">Sacos de supermercado</p>
@@ -335,7 +352,7 @@
 
 
                         <h2 class="txt-color-black txt-semibold txt-size-normal">O que se pode obter</h2>
-                        <div class="item-options-container-3">
+                        <div class="item-options-container">
                             <div class="item-option">
                                 <img class="item-option-img" src="./img/embComida.svg">
                                 <p class="txt-semibold txt-size-normal">Embalagens de cozinha</p>
