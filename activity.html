@@ -2,9 +2,11 @@
 <html lang="pt">
 
 <head>
+    <meta name="author" content="Francisca Palma, Paulo Monteiro, Rafael Silva, Rafael Nogueira, Rodrigo Oliveira">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="./script/activity.js" defer></script>
     <title>Identificar o Plástico - Stico</title>
 </head>
@@ -20,12 +22,23 @@
             </div>
         </div>
     </nav>
-    <main class="content-wrapper">
 
+    <div class="overlay">
+        <span class="material-symbols-outlined close-button"  onclick="closeOverlay()">
+            close
+            </span>
+        <video controls class="video">
+            <source src="./img/video.mp4" type="video/mp4">
+          O seu browser não suporta vídeo.
+          </video>
+    </div>
+    <div class="overlay-bg" onclick="closeOverlay()">
+    </div>
+    <main class="content-wrapper">
         <section>
             <header>
                 <h2>Prepare e misture as soluções</h2>
-                <img src="img/info.svg" alt="informação">
+                <img src="img/info.svg" alt="informação" onclick="openOverlay()">
             </header>
             <div class="activity-first-container">
                 <div id="activity-items-container">
@@ -214,7 +227,7 @@
                                 <p class="txt-semibold txt-size-normal">Iogurtes</p>
                             </div>
                             <div class="item-option">
-                                <img class="item-option-img" src="./img/cestoMercado.svg"alt="cesto de supermercado">
+                                <img class="item-option-img" src="./img/cestoMercado.svg" alt="cesto de supermercado">
                                 <p class="txt-semibold txt-size-normal">Cestos de supermercado</p>
                             </div>
                         </div>

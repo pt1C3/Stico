@@ -1,9 +1,14 @@
+var verificacao = document.cookie;
+if (verificacao == "" || verificacao == "primeiravez=true") {
+    openOverlay();
+}
+
+
 function flutua(i) {
     resetItems(i);
     changeDivider(i);
     changeToFlutua(i);
-    if(i!=4)
-    {
+    if (i != 4) {
         changeNextItem(i);
     }
 
@@ -33,8 +38,7 @@ function resetItems(i) {
             document.getElementById("activity-item" + j).style.backgroundColor = "#ffffff";
             document.getElementById("activity-item" + j).querySelector(".during-activity-item-right").style.display = "none";
             document.getElementById("activity-item" + j).querySelector(".during-activity-item-right-lock").style.display = "flex";
-            if(j==4)
-            {
+            if (j == 4) {
                 document.getElementById("item-content1").style.display = "none";
                 document.getElementById("item-content2").style.display = "none";
             }
@@ -46,11 +50,10 @@ function resetItems(i) {
 
 function changeToAfunda(i) {
     //Aparece o texto
-    if(i==4)
-    {
+    if (i == 4) {
         document.getElementById("item-content1").style.display = "block";
     }
-    else{
+    else {
         document.getElementById("activity-item" + i).querySelector(".during-activity-item-content").style.display = "block";
     }
 
@@ -70,15 +73,14 @@ function changeToAfunda(i) {
 function changeToFlutua(i) {
 
     //Desparece o texto
-    if(i==4)
-    {
+    if (i == 4) {
         document.getElementById("item-content2").style.display = "block";
     }
     else {
         document.getElementById("activity-item" + i).querySelector(".during-activity-item-content").style.display = "none";
     }
 
-    
+
 
     //Muda o estilo
     document.getElementById("activity-item" + i).style.backgroundColor = "#E5F1FF";
@@ -104,7 +106,7 @@ function resetBotaoFlutua(i) {
 
 
 function resetBotaoAfunda(i) {
-        //Redefine os estilos
+    //Redefine os estilos
     document.getElementById("activity-item" + i).querySelector(".afunda-button").classList.add("during-activity-item-button");
     document.getElementById("activity-item" + i).querySelector(".afunda-button").classList.remove("during-activity-item-button-disabled");
     //Redefine o onclick para ser clicável
@@ -131,12 +133,33 @@ function changeDivider(i) {
     }
 
 }
-document.getElementById('mL-input').onchange = function() {
+document.getElementById('mL-input').onchange = function () {
     document.getElementById("agua-1-value").innerText = this.value + "mL";
-    document.getElementById("sal-1-value").innerText = (Math.round(((this.value * 89.5)/250) * 10) / 10) + "g";
+    document.getElementById("sal-1-value").innerText = (Math.round(((this.value * 89.5) / 250) * 10) / 10) + "g";
     document.getElementById("agua-2-value").innerText = this.value + "mL";
-    document.getElementById("agua-3-value").innerText = (Math.round(((this.value * 122.5)/250) * 10) / 10) + "mL";
-    document.getElementById("alcool-1-value").innerText = (Math.round(((this.value * 127.5)/250) * 10) / 10) + "mL";
-    document.getElementById("agua-4-value").innerText = (Math.round(((this.value * 100)/250) * 10) / 10) + "mL";
-    document.getElementById("alcool-2-value").innerText = (Math.round(((this.value * 150)/250) * 10) / 10) + "mL";
-  };
+    document.getElementById("agua-3-value").innerText = (Math.round(((this.value * 122.5) / 250) * 10) / 10) + "mL";
+    document.getElementById("alcool-1-value").innerText = (Math.round(((this.value * 127.5) / 250) * 10) / 10) + "mL";
+    document.getElementById("agua-4-value").innerText = (Math.round(((this.value * 100) / 250) * 10) / 10) + "mL";
+    document.getElementById("alcool-2-value").innerText = (Math.round(((this.value * 150) / 250) * 10) / 10) + "mL";
+};
+
+
+
+function closeOverlay() {
+    document.getElementsByClassName("video")[0].pause();
+    document.getElementsByClassName("overlay-bg")[0].style.display = "none";
+    document.getElementsByClassName("overlay")[0].style.display = "none";
+    document.getElementsByClassName("content-wrapper")[0].style.filter = "none";
+};
+
+function openOverlay() {
+    document.getElementsByClassName("overlay-bg")[0].style.display = "block";
+    document.getElementsByClassName("overlay")[0].style.display = "flex";
+    document.getElementsByClassName("content-wrapper")[0].style.filter = "blur(2px)";
+    if (verificacao == "" || verificacao == "primeiravez=true") {
+        document.cookie = "primeiravez=false";
+    }
+    
+}
+
+

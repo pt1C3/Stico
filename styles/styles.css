@@ -488,12 +488,60 @@ h2 {
     gap: 0.5rem;
 }
 
+.activity-first-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
 .activity-image-container {
     display: flex;
     align-items: baseline;
-    width: 100%;
+    justify-content: center;
 }
-.activity-first-container{
+
+.activity-first-container {
     display: flex;
     justify-content: space-between;
+    height: 100%;
+}
+
+.overlay-bg {
+    display: none;
+    width: 100vw;
+    height: 100%;
+    opacity: 90%;
+    background-color: var(--color-branco-azul);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+}
+
+.overlay {
+    left:20%;
+    top: 15%;
+    position: absolute;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    width: 60%;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    z-index: 15;
+}
+
+.video {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.close-button{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    cursor: pointer;
 }
