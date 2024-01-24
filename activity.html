@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="./script/activity.js" defer></script>
     <title>Identificar o Plástico - Stico</title>
 </head>
@@ -14,7 +15,7 @@
 <body>
     <nav id="navbar">
         <div class="wrapper">
-            <a href="index.html" id="logo"><img src="./img/logo.svg"  alt="garrafa"></a>
+            <a href="index.html" id="logo"><img src="./img/logo.svg" alt="garrafa"></a>
             <div id="right">
                 <a href="reciclagem.html">Reciclagem</a>
                 <a href="origem.html">Origem</a>
@@ -24,13 +25,13 @@
     </nav>
 
     <div class="overlay">
-        <span class="material-symbols-outlined close-button"  onclick="closeOverlay()">
+        <span class="material-symbols-outlined close-button" onclick="closeOverlay()">
             close
-            </span>
+        </span>
         <video controls class="video">
             <source src="./img/video.mp4" type="video/mp4">
-          O seu browser não suporta vídeo.
-          </video>
+            O seu browser não suporta vídeo.
+        </video>
     </div>
     <div class="overlay-bg" onclick="closeOverlay()">
     </div>
@@ -82,10 +83,12 @@
                 </div>
                 <div class="activity-first-right">
                     <div class="activity-image-container">
-                        <img src="img/sal.svg" style="width: 5rem; display: inline-block;margin-right: 1.2rem;" alt="saleiro">
-                        <img src="img/garrafaalcool.svg"
-                            style="width: 6rem;display: inline-block;margin-right: 1.2rem;" alt="garrafa de álcool">
-                        <img src="img/garrafaagua.svg" style="width: 5rem; display: inline-block;" alt="garrafa de água">
+                        <img src="img/sal.svg" style="width: 5rem; display: inline-block;margin-right: 1.2rem;"
+                            alt="saleiro">
+                        <img src="img/garrafaalcool.svg" style="width: 6rem;display: inline-block;margin-right: 1.2rem;"
+                            alt="garrafa de álcool">
+                        <img src="img/garrafaagua.svg" style="width: 5rem; display: inline-block;"
+                            alt="garrafa de água">
                         <img src="img/gobele.svg" style="width: 15rem; display: inline-block;" alt="gobelé">
                     </div>
                     <div id="input-container">
@@ -123,7 +126,8 @@
 
                         <div style="display: flex; justify-content: space-between;height: fit-content;">
                             <div style="display: flex;align-items:center;">
-                                <img src="./img/3pvc.png" style="width: 6rem; filter: brightness(15%);margin: auto;" alt="garrafa">
+                                <img src="./img/3pvc.png" style="width: 6rem; filter: brightness(15%);margin: auto;"
+                                    alt="garrafa">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Policloreto de
                                     Vinilo</h2>
                             </div>
@@ -153,7 +157,8 @@
 
                         <div style="display: flex; justify-content: space-between;">
                             <div style="display: flex;align-items:center;">
-                                <img src="./img/1pet.png" style="width: 6rem; filter: brightness(15%);margin: auto;" alt="plástico tipo 1 - PET">
+                                <img src="./img/1pet.png" style="width: 6rem; filter: brightness(15%);margin: auto;"
+                                    alt="plástico tipo 1 - PET">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Politereftalato de
                                     etileno</h2>
                             </div>
@@ -169,11 +174,11 @@
                                 <p class="txt-semibold txt-size-normal">Garrafa</p>
                             </div>
                             <div class="item-option">
-                                <img class="item-option-img" src="./img/tapete.svg"  alt="tapete">
+                                <img class="item-option-img" src="./img/tapete.svg" alt="tapete">
                                 <p class="txt-semibold txt-size-normal">Tapetes</p>
                             </div>
                             <div class="item-option">
-                                <img class="item-option-img" src="./img/embComida.svg"  alt="embalagem de comida">
+                                <img class="item-option-img" src="./img/embComida.svg" alt="embalagem de comida">
                                 <p class="txt-semibold txt-size-normal">Embalagens de comida</p>
                             </div>
                         </div>
@@ -182,7 +187,28 @@
                             quotidiano. O PET é um material facilmente reciclável, desde que colocado no ecoponto
                             amarelo, destinado aos plásticos. Podemos encontrá-lo, por exemplo, em garrafas de água ou
                             refrigerantes, embalagens de alimentos e de cosmética e em fibras têxteis de poliéster.</p>
+
+                        <p class="txt-color-black txt-size-normal txt-semibold confirm-result"
+                            onclick="openGraphics(0,2)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-color-black txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name txt-semibold">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
                     </div>
+
                 </li>
                 <li id="during-activity-divider1">
                     <hr class="during-activity-divider">
@@ -212,7 +238,8 @@
 
                         <div style="display: flex; justify-content: space-between;">
                             <div style="display: flex;align-items:center;">
-                                <img src="./img/6ps.png" style="width: 6rem; filter: brightness(15%);margin: auto;" alt="plástico do tipo 6 - PS">
+                                <img src="./img/6ps.png" style="width: 6rem; filter: brightness(15%);margin: auto;"
+                                    alt="plástico do tipo 6 - PS">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Poliestireno</h2>
                             </div>
                             <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">1,05 g/cm³
@@ -238,6 +265,25 @@
                             em materiais para isolamento de edifícios. Nos dias de hoje é usado para por exemplo, em
                             copos de iogurtes e de gelados, cestos de supermercado, aparelhos de barbear descartáveis ou
                             brinquedos.</p>
+                            <p class="txt-color-black txt-size-normal txt-semibold confirm-result"
+                            onclick="openGraphics(1,5)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-color-black txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name txt-semibold">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li id="during-activity-divider2">
@@ -246,14 +292,15 @@
                 <li id="activity-item3">
                     <div class="during-activity-item-header">
                         <div>
-                        <p class="txt-semibold txt-color-azul2 activity-item-number">3</p>
+                            <p class="txt-semibold txt-color-azul2 activity-item-number">3</p>
 
-                        <div>
-                            <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de Sódio
-                            </p>
-                            <p class="txt-color-azul2 txt-size-normal">0,93 g/dm³</p>
+                            <div>
+                                <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Cloreto de
+                                    Sódio
+                                </p>
+                                <p class="txt-color-azul2 txt-size-normal">0,93 g/dm³</p>
+                            </div>
                         </div>
-                    </div>
                         <div class="during-activity-item-right-lock">
                             <img class="lock" src="./img/lock.svg" alt="cadeado fechado">
                         </div>
@@ -269,7 +316,8 @@
 
                         <div style="display: flex; justify-content: space-between;">
                             <div style="display: flex;align-items:center;">
-                                <img src="./img/2pead.png" style="width: 6rem; filter: brightness(15%);margin: auto;" alt="plástico do tipo 2 - PEAD">
+                                <img src="./img/2pead.png" style="width: 6rem; filter: brightness(15%);margin: auto;"
+                                    alt="plástico do tipo 2 - PEAD">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Polietileno de alta
                                     densidade</h2>
                             </div>
@@ -293,6 +341,25 @@
                             resistente do que o PET mas também pode ser alvo de reciclagem. Inquebrável, leve e com
                             elevada resistência química, é utilizado na produção de caixas de plástico, tubos para a
                             construção, embalagens de detergentes, brinquedos, baldes ou sacos de supermercado.</p>
+                            <p class="txt-color-black txt-size-normal txt-semibold confirm-result"
+                            onclick="openGraphics(2,1)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-color-black txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name txt-semibold">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
                     </div>
                 </li>
                 <li id="during-activity-divider3">
@@ -301,14 +368,14 @@
                 <li id="activity-item4">
                     <div class="during-activity-item-header">
                         <div>
-                        <p class="txt-semibold txt-color-azul2 activity-item-number">4</p>
+                            <p class="txt-semibold txt-color-azul2 activity-item-number">4</p>
 
-                        <div>
-                            <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Álcool Etílico
-                            </p>
-                            <p class="txt-color-azul2 txt-size-normal">0,91 g/dm³</p>
+                            <div>
+                                <p class="txt-semibold txt-color-azul2 txt-size-normal">Água Destilada e Álcool Etílico
+                                </p>
+                                <p class="txt-color-azul2 txt-size-normal">0,91 g/dm³</p>
+                            </div>
                         </div>
-                    </div>
                         <div class="during-activity-item-right-lock">
                             <img class="lock" src="./img/lock.svg" alt="cadeado fechado">
                         </div>
@@ -324,7 +391,8 @@
 
                         <div style="display: flex; justify-content: space-between;">
                             <div style="display: flex;align-items:center;">
-                                <img src="./img/4pebd.png" style="width: 6rem; filter: brightness(15%);margin: auto;" alt="plástico do tipo 4 - PEBD">
+                                <img src="./img/4pebd.png" style="width: 6rem; filter: brightness(15%);margin: auto;"
+                                    alt="plástico do tipo 4 - PEBD">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Polietileno de baixa
                                     densidade</h2>
                             </div>
@@ -348,13 +416,33 @@
                             leve, flexível, transparente e impermeável, usado em sacos de supermercado, sacos de lixo,
                             utensílios domésticos ou películas para embalar alimentos. É difícil de reciclar, pelo que
                             deve ser uma opção a evitar no seu dia-a-dia.</p>
+                            <p class="txt-color-black txt-size-normal txt-semibold confirm-result"
+                            onclick="openGraphics(3, 3)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-color-black txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name txt-semibold">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="during-activity-item-content" id="item-content2">
                         <h2 class="txt-color-black txt-semibold txt-size-normal">Pode ser</h2>
 
                         <div style="display: flex; justify-content: space-between;">
                             <div style="display: flex;align-items:center;">
-                                <img src="./img/5pp.png" style="width: 6rem; filter: brightness(15%);margin: auto;" alt="plástico do tipo 5 - PP">
+                                <img src="./img/5pp.png" style="width: 6rem; filter: brightness(15%);margin: auto;"
+                                    alt="plástico do tipo 5 - PP">
                                 <h2 class="txt-color-black txt-semibold" style="margin-left: 2rem;">Polipropileno</h2>
                             </div>
                             <h2 class="txt-color-black txt-semibold" style="margin:auto;margin-right: 0;">0.90 g/cm³
@@ -383,6 +471,25 @@
                             polipropileno é bastante usado na produção de boiões e frascos para alimentos, mas também em
                             embalagens de comida para takeaway, fios, cabos, tampas de garrafas, fraldas descartáveis e
                             garrafas reutilizáveis.</p>
+                            <p class="txt-color-black txt-size-normal txt-semibold confirm-result"
+                            onclick="openGraphics(4,5)">Confirmar com espectrofotómetro</p>
+                        <div class="graphics-container">
+                            <p class="txt-color-black txt-size-normal">Confirme o resultado, comparando os gráficos
+                                abaixo com o resultado do seu espectrofotómetro</p>
+                            <p class="graphic-plastic-name txt-semibold">PET - Politeraftalato de etileno</p>
+                            <div>
+                                <button onclick="previousGraph()" class="graphics-button">
+                                    <span class="material-symbols-outlined">
+                                        arrow_back
+                                    </span>
+                                </button>
+                                <img src="img/pet-graph.png" class="graphic-image">
+
+                                <button onclick="nextGraph()" class="graphics-button"> <span class="material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>

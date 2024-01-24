@@ -162,4 +162,35 @@ function openOverlay() {
     
 }
 
+var graphs = ["pet", "pead", "pvc", "pebd", "pp", "ps"];
+var names = [
+    "Politereftalato de etileno",
+    "Polietileno de alta densidade",
+    "Policloreto de vinilo",
+    "Polietileno de baixa densidade",
+    "Polipropileno",
+    "Poliestireno"
+];
+var count = 0;
+var item = 0;
+function openGraphics(i,j){
+    count = j;
+    item = i;
+    document.getElementsByClassName("graphics-container")[item].style.display="flex";
+    showGraph(count, item);
+}
+function nextGraph(){
+    if(count!=5) count++;
+    else count=0;
+    showGraph(count,item);
+}
+function previousGraph(){
+    if(count!=0) count--;
+    else count=5;
+    showGraph(count,item);
 
+}
+function showGraph(i, j){
+    document.getElementsByClassName("graphic-image")[j].src = "./img/" + graphs[i] + "-graph.png";
+    document.getElementsByClassName("graphic-plastic-name")[j].innerText = graphs[i].toUpperCase() + " - " + names[i] + " (Tipo "+ (i+1) + ")";
+}

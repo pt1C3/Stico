@@ -8,12 +8,14 @@
     text-decoration: none;
     z-index: 4;
     list-style-type: none;
+    
 }
 
 body {
     overflow-x: hidden;
     margin-top: 4rem;
     --color-azul: #0066CB;
+    --color-azul2:#0C5195;
     --color-black: #131A22;
     --color-azul-medio: #0B3C6D;
     --color-azul-claro: #80B3E5;
@@ -77,23 +79,6 @@ body {
 .txt-color-black {
     color: #131A22;
 }
-
-.bg-color-azul2 {
-    background-color: #0C5195;
-}
-
-.bg-color-brancoazul {
-    background-color: #E5F1FF;
-}
-
-.bg-color-azul {
-    background-color: #0066CB;
-}
-
-.bg-color-azulclaro {
-    background-color: #80B3E5;
-}
-
 a {
     color: white;
 }
@@ -205,6 +190,7 @@ h2 {
     cursor: pointer;
     transition: 0.3s;
     transform: scale(1);
+    background-color: var(--color-azul2);
 }
 
 #hero-elements>button:hover {
@@ -544,4 +530,39 @@ h2 {
     top:1rem;
     right:1rem;
     cursor: pointer;
+}
+.confirm-result{
+    cursor: pointer;
+}
+.confirm-result:hover{
+    text-decoration: underline;
+}
+.graphics-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+}
+
+.graphics-container>div{
+    width: 100%;
+    display: flex;
+    gap:0.5rem;
+    background-color: var(--color-branco-azul);
+}
+.graphic-image{
+    mix-blend-mode: multiply;
+    flex:1 0;
+}
+
+.graphics-button{
+    cursor: pointer;
+    width: 10%;
+    border-radius: 0.3rem;
+    border:none;
+    background-color: transparent;
+}
+.graphics-button>span{
+    color:var(--color-azul);
+    font-size: 2rem;
 }
