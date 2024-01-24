@@ -146,6 +146,7 @@ document.getElementById('mL-input').onchange = function () {
 
 
 function closeOverlay() {
+    document.getElementsByTagName("body")[0].style.overflowY = "auto";
     document.getElementsByClassName("video")[0].pause();
     document.getElementsByClassName("overlay-bg")[0].style.display = "none";
     document.getElementsByClassName("overlay")[0].style.display = "none";
@@ -153,6 +154,7 @@ function closeOverlay() {
 };
 
 function openOverlay() {
+    document.getElementsByTagName("body")[0].style.overflowY = "hidden";
     document.getElementsByClassName("overlay-bg")[0].style.display = "block";
     document.getElementsByClassName("overlay")[0].style.display = "flex";
     document.getElementsByClassName("content-wrapper")[0].style.filter = "blur(2px)";
