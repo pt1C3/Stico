@@ -52,6 +52,7 @@ body {
 
 .txt-regular {
     font-family: Regular;
+    
 }
 
 .txt-extralight {
@@ -61,6 +62,7 @@ body {
 .txt-size-normal {
     font-size: 1.2rem;
     line-height: 1.3;
+    
 }
 
 .txt-size-bigger {
@@ -223,6 +225,9 @@ h2 {
 
 #plastic-text {
     margin-top: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+  
 }
 
 @media (max-width:800px) {
@@ -429,20 +434,22 @@ h2 {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    
 
 }
 
 .item-options-container>* {
-    flex: 1 1 0px;
+    flex-basis: 100%;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.item-option {
-    height: 8rem;
+.item-option>p{
+    width: 50%;
 }
-
 .item-option-img {
-    height: 80%;
-    margin-bottom: 0.5rem;
+    height: 8rem;
 }
 
 #options-2,
